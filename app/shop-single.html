@@ -74,7 +74,6 @@
           </div>
         </div>
       </header>
-      <!-- ////////////////////////// -->
       <main class="shop-container shop-container--single">
         <div class="container">
           <section class="breadcrumbs">
@@ -90,26 +89,37 @@
             </header>
 
             <article class="shop-single">
-              <!-- ///// GRID ///// -->
               <section class="single-galery">
                 <div class="single-galery__active-img">
                   <div class="single-galery__active-list">
-                    <img src="./img/galery-1.jpg" alt="" />
-                    <!-- <img src="./img/galery-2.jpg" alt="" />
-                    <img src="./img/galery-3.jpg" alt="" />
-                    <img src="./img/galery-4.jpg" alt="" /> -->
+                    <div><img src="./img/galery-1.jpg" alt="" /></div>
+                    <div><img src="./img/galery-2.jpg" alt="" /></div>
+                    <div><img src="./img/galery-3.jpg" alt="" /></div>
+                    <div><img src="./img/galery-4.jpg" alt="" /></div>
                   </div>
                   <div class="single-galery__zoom">
-                    <a href="#"><img src="./img/icon/zoom.svg" alt="Zoom" /></a>
+                    <a href="javascript:PopUpShow()"
+                      ><img src="./img/icon/zoom.svg" alt="Zoom"
+                    /></a>
                   </div>
                 </div>
+
+                <div class="popup">
+                  <div class="popup__body">
+                    <div class="popup__bg">
+                      <img src="./img/galery-1.jpg" alt="" />
+                      <a href="javascript:PopUpHide()">CLOsE</a>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="single-galery__list">
                   <!-- //////slider///// -->
-                  <!-- <div class="single-galery__slide">
+                  <div class="single-galery__slide">
                     <div class="single-galery__item">
                       <img src="./img/galery-1.jpg" alt="" />
                     </div>
-                  </div> -->
+                  </div>
                   <div class="single-galery__slide">
                     <div class="single-galery__item">
                       <img src="./img/galery-2.jpg" alt="" />
@@ -125,7 +135,6 @@
                       <img src="./img/galery-4.jpg" alt="" />
                     </div>
                   </div>
-                  <!-- //////slider END///// -->
                 </div>
               </section>
 
@@ -262,7 +271,6 @@
                   </div>
                 </div>
               </section>
-              <!-- ///// GRID END ///// -->
             </article>
           </section>
         </div>
@@ -278,7 +286,6 @@
               </p>
             </div>
             <div class="related__list">
-              <!-- ///////////// -->
               <div class="related-product">
                 <div class="related-product__img">
                   <a href="#">
@@ -322,7 +329,6 @@
                   <a href="#">Memorial Fans</a>
                 </div>
               </div>
-              <!-- ///////////// -->
             </div>
           </div>
         </section>
@@ -338,7 +344,6 @@
               </p>
             </div>
             <div class="faqs__list">
-              <!--GRID-->
               <a href="#">
                 <div class="faq">
                   <div class="faq__img">
@@ -496,7 +501,6 @@
         </section>
       </main>
 
-      <!-- ////////////////////////// -->
       <footer class="footer">
         <div class="footer__widgets container">
           <div class="footer__left">

@@ -49,4 +49,48 @@ jQuery(document).ready(function ($) {
     speed: 600,
     arrows: false,
   });
+
+  $('.single-galery__active-list').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.single-galery__list',
+  });
+  $('.single-galery__list').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.single-galery__active-list',
+    focusOnSelect: true,
+    prevArrow:
+      '<span class="single-galery__arrow single-galery__arrow--left"><img src="./img/icon/select-arrow.svg" alt="" /></span>',
+    nextArrow:
+      ' <span class="single-galery__arrow"><img src="./img/icon/select-arrow.svg" alt="" /></span>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
+
+  //popup
+  $('.popup').on('click', function () {
+    PopUpHide();
+  });
 });
+
+function PopUpShow() {
+  $('.popup').show();
+}
+function PopUpHide() {
+  $('.popup').hide();
+}

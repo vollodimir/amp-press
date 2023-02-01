@@ -139,6 +139,13 @@
       flex-shrink: 0;
     }
   }
+  .slick-slide {
+    margin: 0 15px;
+  }
+
+  .slick-list {
+    margin: 0 -15px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -534,6 +541,17 @@
   .products {
     &__list {
       padding-top: 0;
+    }
+  }
+
+  .single-galery {
+    &__arrow {
+      opacity: 0;
+    }
+    &:hover {
+      .single-galery__arrow {
+        opacity: 1;
+      }
     }
   }
 }
