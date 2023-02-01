@@ -1,0 +1,66 @@
+.categories {
+  max-width: 267px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-bottom: 1px solid #4e3362;
+  border-top: 1px solid #4e3362;
+
+  h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+
+    a {
+      font-weight: 400;
+      line-height: 42px;
+      letter-spacing: 0.01em;
+    }
+
+    &--active a {
+      font-weight: 700;
+      color: #ed2d38;
+    }
+  }
+
+  details {
+    flex-shrink: 0;
+    display: block;
+    max-width: fit-content;
+
+    overflow: hidden;
+    user-select: none;
+
+    summary {
+      display: block;
+      position: relative;
+      padding-right: 30px;
+      cursor: pointer;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 21px;
+        height: 100%;
+        background: url('../../img/icon/select-arrow.svg') no-repeat right center;
+        background-size: 21px 19px;
+        transition: 0.5s;
+      }
+    }
+
+    &[open] > summary::after {
+      transform: rotate(180deg);
+    }
+  }
+}

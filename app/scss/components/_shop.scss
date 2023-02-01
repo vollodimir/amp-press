@@ -1,0 +1,51 @@
+.shop {
+  padding-top: 47px;
+
+  a {
+    color: #4e3362;
+  }
+
+  &__header {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .shop-select {
+      margin: 5px 0;
+    }
+  }
+
+  &__title {
+    margin: 5px 0;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+    letter-spacing: 0.03em;
+  }
+
+  &__results {
+    margin: 5px 0;
+    font-weight: 700;
+
+    a,
+    span {
+      display: inline-block;
+      font-size: 15px;
+      line-height: 32px;
+      letter-spacing: 0.03em;
+    }
+    span {
+      margin-right: 23px;
+    }
+
+    a {
+      margin-left: 19px;
+      font-weight: 400;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

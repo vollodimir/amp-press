@@ -1,0 +1,89 @@
+.advantage {
+  display: flex;
+
+  &__img {
+    margin-right: 33px;
+    svg {
+      fill: #4e3362;
+    }
+  }
+
+  &__title {
+    margin: 0 0 11px;
+    font-weight: 700;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #ed2d38;
+  }
+
+  &__description {
+    margin: 0;
+    letter-spacing: normal;
+  }
+}
+
+.advantages {
+  position: relative;
+  padding: 69px 0 57px;
+  background: url('../../img/advantages_bg.jpg') no-repeat;
+  background-size: cover;
+  text-align: center;
+
+  .advantage {
+    margin-bottom: 25px;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(254, 252, 245, 0.62);
+    backdrop-filter: blur(5px);
+    mix-blend-mode: screen;
+  }
+
+  &__list {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 33px;
+    max-width: 80%;
+    text-align: left;
+    z-index: 5;
+  }
+
+  .btn {
+    position: relative;
+    letter-spacing: normal;
+    z-index: 5;
+  }
+
+  &--dark {
+    padding: 62px 0 18px;
+    .advantages {
+      &__bg {
+        background: rgba(40, 34, 80, 0.88);
+        backdrop-filter: blur(0);
+        mix-blend-mode: multiply;
+      }
+
+      &__list {
+        margin-bottom: 0;
+        position: relative;
+      }
+    }
+
+    .advantage {
+      &,
+      &__title {
+        color: #fff;
+      }
+
+      &__img {
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}

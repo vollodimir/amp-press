@@ -1,0 +1,60 @@
+.faqs {
+  &__list {
+    padding: 68px 0 71px 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 25px 31px;
+  }
+  .heading__description a {
+    color: #4e3362;
+  }
+}
+
+.faq {
+  padding: 14px 5px 5px;
+  max-width: 369px;
+  min-height: 115px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #4e3362;
+  transition: 0.3s;
+
+  &__img {
+    flex-grow: 1;
+    padding-right: 35px;
+    padding-top: 5px;
+    text-align: center;
+    svg {
+      fill: #4e3362;
+      fill-opacity: 0.5;
+      transition: 0.3s;
+    }
+  }
+
+  &__title {
+    width: 162px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4e3362;
+    transition: 0.3s;
+  }
+  &:hover {
+    border: 1px solid #ed2d38;
+    box-shadow: inset 0px 0px 0px 2px #ed2d38;
+
+    .faq__img {
+      svg {
+        fill: #ed2d38;
+        fill-opacity: 1;
+      }
+    }
+
+    .faq__title {
+      color: #ed2d38;
+    }
+  }
+}

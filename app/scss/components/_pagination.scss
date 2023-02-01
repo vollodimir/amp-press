@@ -1,0 +1,41 @@
+//wp classes
+
+.navigation,
+.pagination {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.page-numbers {
+  display: block;
+  padding: 5px 5px;
+  margin: 0 8px;
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid #4e3362;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+  opacity: 0.5;
+  color: #4e3362;
+  overflow: hidden;
+}
+
+.page-numbers,
+.current {
+  margin-bottom: 5px;
+}
+
+.page-numbers:hover,
+.current {
+  opacity: 1;
+  color: #fff;
+  background: #4e3362;
+}

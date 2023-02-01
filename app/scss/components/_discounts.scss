@@ -1,0 +1,53 @@
+.discounts {
+  padding-top: 39px;
+  padding-bottom: 59px;
+  text-align: center;
+  background: linear-gradient(rgba(#1a0506, 0.5), rgba(#1a0506, 0.5)),
+    url('../../img/discounts_bg.jpg') no-repeat;
+  background-size: cover;
+
+  &__title {
+    margin: 0 0 9px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+
+  &__description {
+    margin: 0 auto;
+    margin-bottom: 21px;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    letter-spacing: 0.03em;
+  }
+
+  &__row {
+    margin: 0 auto;
+    position: relative;
+    height: 56px;
+    max-width: 630px;
+
+    input {
+      width: 100%;
+      padding: 18px 150px 18px 30px;
+      background: #fff;
+      border-radius: 4px;
+      overflow: hidden;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: normal;
+      color: #4b4b4b;
+      outline: none;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 1px 38px 0;
+    }
+  }
+}
