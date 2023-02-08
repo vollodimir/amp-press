@@ -125,11 +125,11 @@ $line-height: calc($width / 7);
     width: 40px;
     height: 40px;
     border: 1px solid #4e3362;
-    background: url('../../img/icon/user.svg') no-repeat center center;
+    background: url('../img/icon/user.svg') no-repeat center center;
   }
 
   &__cart {
-    background-image: url('../../img/icon/cart.svg');
+    background-image: url('../img/icon/cart.svg');
   }
 
   &__delivery {
@@ -168,7 +168,7 @@ $line-height: calc($width / 7);
       right: 15px;
       width: 16px;
       height: 16px;
-      background: url('../../img/icon/sub-menu.svg') no-repeat;
+      background: url('../img/icon/sub-menu.svg') no-repeat;
       background-size: 16px;
     }
   }
@@ -195,7 +195,7 @@ $line-height: calc($width / 7);
       &__btn {
         top: 7px;
         right: 0;
-        background: url('../../img/icon/sub-menu-light.svg') no-repeat;
+        background: url('../img/icon/sub-menu-light.svg') no-repeat;
         background-size: 15px;
       }
 

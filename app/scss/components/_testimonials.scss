@@ -4,6 +4,19 @@
   p {
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  //slick slider
+  .slick-track {
+    display: flex;
+  }
+  .slick-track .slick-slide {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -16,7 +29,6 @@
   &__autor,
   &__text {
     display: inline-block;
-    margin: 0;
   }
 
   &__autor {
@@ -42,7 +54,7 @@
     line-height: 19px;
     padding-right: 49px;
     &::after {
-      content: url('../../img/icon/right-double-quotation.svg');
+      content: url('../img/icon/right-double-quotation.svg');
       position: absolute;
       height: 100%;
       top: -2px;

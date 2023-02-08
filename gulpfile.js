@@ -36,7 +36,7 @@ function images() {
         imagemin.mozjpeg({ quality: 75, progressive: true }),
         imagemin.optipng({ optimizationLevel: 5 }),
         imagemin.svgo({
-          plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
+          plugins: [{ removeViewBox: true }, { cleanupIDs: true }],
         }),
       ]),
     )
@@ -53,9 +53,20 @@ function styles() {
 }
 
 function build() {
-  return src(['app/css/style.min.css', 'app/fonts/**/*', 'app/js/main.min.js', 'app/*.html'], {
-    base: 'app',
-  }).pipe(dest('dist'));
+  return src(
+    [
+      'app/css/style.min.css',
+      'app/css/**/*',
+      'app/fonts/**/*',
+      'app/js/main.min.js',
+      'app/js/**/*',
+      '!app/js/main.js',
+      'app/*.html',
+    ],
+    {
+      base: 'app',
+    },
+  ).pipe(dest('dist'));
 }
 
 function watching() {

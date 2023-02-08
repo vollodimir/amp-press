@@ -23,7 +23,7 @@
       border: 0;
       border-right: 1px solid #fff;
       &::after {
-        content: url('../../img/icon/custom-arrow-right-sm.svg');
+        content: url('../img/icon/custom-arrow-right-sm.svg');
         bottom: auto;
         top: 0;
         right: -21px;
@@ -206,7 +206,7 @@
       line-height: 18px;
       letter-spacing: normal;
       color: #ed2d38;
-      background: url('../../img/icon/delivery.svg') no-repeat left bottom 2px;
+      background: url('../img/icon/delivery.svg') no-repeat left bottom 2px;
       background-size: 37px;
     }
 
@@ -271,7 +271,7 @@
         top: 5px;
         width: 8px;
         height: 8px;
-        background: url('../../img/icon/sub-menu.svg') no-repeat;
+        background: url('../img/icon/sub-menu.svg') no-repeat;
         transition: 0.3s;
       }
       &:hover {
@@ -318,7 +318,7 @@
           content: '';
           display: block;
           top: 8px;
-          background: url('../../img/icon/sub-menu-light.svg') no-repeat;
+          background: url('../img/icon/sub-menu-light.svg') no-repeat;
         }
       }
 
@@ -479,7 +479,7 @@
   .socials {
     text-align: right;
     &__list {
-      justify-content: space-between;
+      justify-content: flex-end;
     }
   }
 
@@ -500,7 +500,7 @@
       flex-direction: row;
     }
     &__title {
-      flex-basis: 34.2%;
+      min-width: 34.2%;
     }
 
     &__results {
@@ -509,6 +509,7 @@
   }
 
   .categories {
+    margin: 0;
     padding: 0;
     display: block;
     border: none;

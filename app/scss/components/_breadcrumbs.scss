@@ -10,9 +10,6 @@
     color: #4e3362;
   }
   a {
-    &::after {
-      content: '/';
-    }
     &:hover {
       opacity: 0.7;
     }

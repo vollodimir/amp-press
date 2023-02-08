@@ -1,18 +1,22 @@
 .popup {
-  display: none;
+  position: fixed;
+  top: 0;
+  left: -9999px;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 150;
+  //display: none;
   &__body {
-    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0;
-    left: 0;
     width: 100%;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 150;
   }
   &__bg {
+    width: 100%;
     flex-grow: 1;
     margin: 25px;
     padding: 45px 0;
@@ -20,21 +24,21 @@
     text-align: center;
 
     img {
+      margin: 0 auto;
       max-height: 70%;
       max-width: 70%;
       object-fit: contain;
     }
-
-    a {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: block;
-      text-transform: uppercase;
-      padding-left: 30px;
-      background: url('../img/icon/close.svg') no-repeat left center;
-      background-size: 20px;
-      color: #fff;
-    }
+  }
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    display: block;
+    text-transform: uppercase;
+    padding-left: 30px;
+    background: url('../img/icon/close.svg') no-repeat left center;
+    background-size: 20px;
+    color: #fff;
   }
 }

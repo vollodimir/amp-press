@@ -1,9 +1,21 @@
 # AMP-Press
 
-HTML templtate, HTML to WordPress, mobile first, pixel perfect, jQuery
+HTML templtate, HTML to WordPress, mobile first, pixel perfect, jQuery, WooCommerce
 
-HTML version hosted: <a href="#">pl.vn.ua/#</a>
+## HTML version hosted:
 
-WordPress version hosted: <a href="http://pl.vn.ua/">#.pl.vn.ua</a>
+<ul>
+    <li><a href="http://pl.vn.ua/amp-press/">Home Page</a></li>
+    <li><a href="http://pl.vn.ua/amp-press/shop.html">Catalog</a></li>
+    <li><a href="http://pl.vn.ua/amp-press/shop-single.html">Product</a></li>
+</ul>
 
-WordPress template is archive: <strong>#.zip</strong>
+## WordPress version hosted:
+
+<ul>
+    <li><a href="http://amp-press.pl.vn.ua/">Home Page</a></li>
+    <li><a href="http://amp-press.pl.vn.ua/amp-press/shop/">Catalog</a></li>
+    <li><a href="http://amp-press.pl.vn.ua/product/share-a-memory-2080/">Product Page</a></li>
+</ul>
+
+WordPress template is archive: <strong>wp-amp-press.zip</strong>

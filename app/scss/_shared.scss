@@ -169,9 +169,10 @@
   select,
   select:focus {
     padding-left: 18px;
+    padding-right: 40px;
     padding-top: 4px;
     appearance: none;
-    width: 207px;
+    min-width: 207px;
     height: 40px;
     font-weight: 400;
     font-size: 15px;
@@ -180,6 +181,6 @@
     color: #4e3362;
     outline: none;
     border: 1px solid #4e3362;
-    background: url('../../img/icon/select-arrow.svg') no-repeat right 15px center;
+    background: url('../img/icon/select-arrow.svg') no-repeat right 15px center;
   }
 }
