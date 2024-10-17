@@ -13,9 +13,9 @@ HTML templtate, HTML to WordPress, mobile first, pixel perfect, jQuery, WooComme
 ## WordPress version hosted:
 
 <ul>
-    <li><a href="https://pl.vn.ua/amp-press/">Home Page</a></li>
-    <li><a href="https://pl.vn.ua/amp-press/shop/">Catalog</a></li>
-    <li><a href="https://pl.vn.ua/amp-press/product/share-a-memory-2080/">Product Page</a></li>
+    <li><a href="https://wp.pl.vn.ua/amp-press/">Home Page</a></li>
+    <li><a href="https://wp.pl.vn.ua/amp-press/shop/">Catalog</a></li>
+    <li><a href="https://wp.pl.vn.ua/amp-press/product/share-a-memory-2080/">Product Page</a></li>
 </ul>
 
 WordPress template is archive: <strong>wp-amp-press.zip</strong>
